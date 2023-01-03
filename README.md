@@ -48,8 +48,8 @@ Columns:
 
 |     Algorithm     |  sensitivity(TPR) |  specificity(TNR)  |
 |-------------------|-------------------|--------------------|
-|   Decision Tree   |        78,34%     |       99,9%        |
-|   Random Forest   |        82,17%     |       99,9%        |
+|   Decision Tree   |        79,62%     |       99,96%       |
+|   Random Forest   |        82,17%     |       99,99%       |
 |       MLP         |        84,08%     |       99,6%        |
 |       SVM         |          0%       |       99,99%       |
 |Logistic regression|        68,79%     |       99,97%       |
@@ -58,6 +58,18 @@ Columns:
 ### 2. Parameters of Algorithms
 
 2.1 Decision Tree
+
+|     Max depth     |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|-------------------|--------------------|
+|        2          |       73,89%      |       99,98%       |
+|        5          |       78,98%      |       99,98%       |
+|        10         |       78,98%      |       99,98%       |
+|        15         |       78,98%      |       99,98%       |
+|        19         |       77,71%      |       99,96%       |
+|        21         |       78,34%      |       99,96%       |
+
+
+2.1 Random Forest
 
 |     Max depth     |  sensitivity(TPR) |  specificity(TNR)  |
 |-------------------|-------------------|--------------------|

@@ -58,8 +58,65 @@ print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specifici
 
 """# Changing parameters of decision tree
 
-## Max depth = 15
+## Max depth = 2
 """
+
+dt = DecisionTreeClassifier(max_depth = 2)
+dt.fit(x_train,y_train)
+
+y_pred = dt.predict(x_test)
+
+dt.score(x_test, y_test)
+
+confusion_matrix(y_test, y_pred, labels=[1,0])
+
+tp, fn, fp, tn = confusion_matrix(y_test, y_pred, labels=[1,0]).ravel()
+(tp, fn, fp, tn)
+
+sensitivity = tp/(tp+fn)
+specificity = tn/(fp+tn)
+
+print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
+
+"""## Max depth = 5"""
+
+dt = DecisionTreeClassifier(max_depth = 5)
+dt.fit(x_train,y_train)
+
+y_pred = dt.predict(x_test)
+
+dt.score(x_test, y_test)
+
+confusion_matrix(y_test, y_pred, labels=[1,0])
+
+tp, fn, fp, tn = confusion_matrix(y_test, y_pred, labels=[1,0]).ravel()
+(tp, fn, fp, tn)
+
+sensitivity = tp/(tp+fn)
+specificity = tn/(fp+tn)
+
+print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
+
+"""## Max depth = 10"""
+
+dt = DecisionTreeClassifier(max_depth = 10)
+dt.fit(x_train,y_train)
+
+y_pred = dt.predict(x_test)
+
+dt.score(x_test, y_test)
+
+confusion_matrix(y_test, y_pred, labels=[1,0])
+
+tp, fn, fp, tn = confusion_matrix(y_test, y_pred, labels=[1,0]).ravel()
+(tp, fn, fp, tn)
+
+sensitivity = tp/(tp+fn)
+specificity = tn/(fp+tn)
+
+print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
+
+"""## Max depth = 15"""
 
 dt = DecisionTreeClassifier(max_depth = 15)
 dt.fit(x_train,y_train)
@@ -78,28 +135,9 @@ specificity = tn/(fp+tn)
 
 print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
 
-"""## Max depth = 18"""
+"""## Max depth = 19"""
 
-dt = DecisionTreeClassifier(max_depth = 18)
-dt.fit(x_train,y_train)
-
-y_pred = dt.predict(x_test)
-
-dt.score(x_test, y_test)
-
-confusion_matrix(y_test, y_pred, labels=[1,0])
-
-tp, fn, fp, tn = confusion_matrix(y_test, y_pred, labels=[1,0]).ravel()
-(tp, fn, fp, tn)
-
-sensitivity = tp/(tp+fn)
-specificity = tn/(fp+tn)
-
-print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
-
-"""## Max depth = 20"""
-
-dt = DecisionTreeClassifier(max_depth = 20)
+dt = DecisionTreeClassifier(max_depth = 19)
 dt.fit(x_train,y_train)
 
 y_pred = dt.predict(x_test)
@@ -119,44 +157,6 @@ print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specifici
 """## Max depth = 21"""
 
 dt = DecisionTreeClassifier(max_depth = 21)
-dt.fit(x_train,y_train)
-
-y_pred = dt.predict(x_test)
-
-dt.score(x_test, y_test)
-
-confusion_matrix(y_test, y_pred, labels=[1,0])
-
-tp, fn, fp, tn = confusion_matrix(y_test, y_pred, labels=[1,0]).ravel()
-(tp, fn, fp, tn)
-
-sensitivity = tp/(tp+fn)
-specificity = tn/(fp+tn)
-
-print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
-
-"""## Max depth = 22"""
-
-dt = DecisionTreeClassifier(max_depth = 22)
-dt.fit(x_train,y_train)
-
-y_pred = dt.predict(x_test)
-
-dt.score(x_test, y_test)
-
-confusion_matrix(y_test, y_pred, labels=[1,0])
-
-tp, fn, fp, tn = confusion_matrix(y_test, y_pred, labels=[1,0]).ravel()
-(tp, fn, fp, tn)
-
-sensitivity = tp/(tp+fn)
-specificity = tn/(fp+tn)
-
-print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
-
-"""## Max depth = 25"""
-
-dt = DecisionTreeClassifier(max_depth = 25)
 dt.fit(x_train,y_train)
 
 y_pred = dt.predict(x_test)
