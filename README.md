@@ -44,6 +44,8 @@ Columns:
 
 ## Research
 
+### Algorithms
+
 |     Algorithm     |  sensitivity(TPR) |  specificity(TNR)  |
 |-------------------|-------------------|--------------------|
 |   Decision Tree   |        79,98%     |       99,9%        |
@@ -51,3 +53,4 @@ Columns:
 |       MLP         |        84,08%     |       99,6%        |
 |       SVM         |          0%       |       99,99%       |
 |Logistic regression|        68,79%     |       99,97%       |
+|       KNN         |         5,1%      |       99,99%       |
