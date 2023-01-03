@@ -11,7 +11,7 @@ Original file is located at
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
+from sklearn.svm import LinearSVC
 from sklearn.metrics import confusion_matrix
 
 """# Credit card data"""
@@ -41,7 +41,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,random_state=331, test_s
 
 print("train rows: {}, test rows: {}".format(x_train.shape[0], x_test.shape[0]))  # rows
 
-svc = SVC()
+svc = LinearSVC()
 svc.fit(x_train,y_train)
 
 y_pred = svc.predict(x_test)
@@ -60,7 +60,7 @@ print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specifici
 
 """## C 0.5"""
 
-svc = SVC(C= 0.5)
+svc = LinearSVC(C= 0.5)
 svc.fit(x_train,y_train)
 
 y_pred = svc.predict(x_test)
@@ -79,7 +79,7 @@ print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specifici
 
 """## C 1.0"""
 
-svc = SVC(C= 1)
+svc = LinearSVC(C= 1)
 svc.fit(x_train,y_train)
 
 y_pred = svc.predict(x_test)
@@ -98,7 +98,26 @@ print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specifici
 
 """## C 5.0"""
 
-svc = SVC(C= 5)
+svc = LinearSVC(C= 5)
+svc.fit(x_train,y_train)
+
+y_pred = svc.predict(x_test)
+
+svc.score(x_test, y_test)
+
+confusion_matrix(y_test, y_pred, labels=[1,0])
+
+tp, fn, fp, tn = confusion_matrix(y_test, y_pred, labels=[1,0]).ravel()
+(tp, fn, fp, tn)
+
+sensitivity = tp/(tp+fn)
+specificity = tn/(fp+tn)
+
+print("sensitivity = {:.4f}, specificity = {:.4f}".format(sensitivity, specificity))
+
+"""## C 20.0"""
+
+svc = LinearSVC(C= 20)
 svc.fit(x_train,y_train)
 
 y_pred = svc.predict(x_test)
