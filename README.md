@@ -43,3 +43,7 @@ Columns:
 - Class 1 for fraudulent transactions, 0 otherwise
 
 ## Research
+
+|  Algorithm    |  sensitivity(TPR) |  specificity(TNR)  |
+|---------------|-------------------|--------------------|
+| Decision Tree |        79%        |       99,9%        |
