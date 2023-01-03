@@ -44,13 +44,26 @@ Columns:
 
 ## Research
 
-### Algorithms
+### 1. Different  Algorithms
 
 |     Algorithm     |  sensitivity(TPR) |  specificity(TNR)  |
 |-------------------|-------------------|--------------------|
-|   Decision Tree   |        79,98%     |       99,9%        |
+|   Decision Tree   |        78,34%     |       99,9%        |
 |   Random Forest   |        82,17%     |       99,9%        |
 |       MLP         |        84,08%     |       99,6%        |
 |       SVM         |          0%       |       99,99%       |
 |Logistic regression|        68,79%     |       99,97%       |
 |       KNN         |         5,1%      |       99,99%       |
+
+### 2. Parameters of Algorithms
+
+2.1 Decision Tree
+
+|     Max depth     |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|-------------------|--------------------|
+|        15         |       77,71%      |       99,97%       |
+|        18         |       79,62%      |       99,96%       |
+|        20         |       78,34%      |       99,96%       |
+|        21         |       79,62%      |       99,96%       |
+|        22         |       77,71%      |       99,96%       |
+|        25         |       77,71%      |       99,96%       |
