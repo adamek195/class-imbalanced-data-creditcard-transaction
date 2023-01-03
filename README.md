@@ -2,7 +2,7 @@
 
 The research was made for the studies of Computer Engineering with a specialization in Computer Graphics and Multimedia Systems at the Wrocław University of Science and Technology. The goal of the research was to create a predictive model for classifying credit card transactions as fraud or a regular transaction. Class-imbalanced data was used to create the model.
 
-## Creditcard data
+## Creditcard dataset
 
 Data is CSV file with anonymized credit card transactions labeled as fraudulent or genuine.
 The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. It contains only numerical input variables which are the result of a PCA transformation.
@@ -41,3 +41,5 @@ Columns:
 - V28 abc
 - Amount Transaction amount
 - Class 1 for fraudulent transactions, 0 otherwise
+
+## Research
