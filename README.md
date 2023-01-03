@@ -46,5 +46,5 @@ Columns:
 
 |  Algorithm    |  sensitivity(TPR) |  specificity(TNR)  |
 |---------------|-------------------|--------------------|
-| Decision Tree |        79%        |       99,9%        |
-| Random Forest |        82%        |       99,9%        |
+| Decision Tree |        79,98%     |       99,9%        |
+| Random Forest |        82,17%     |       99,9%        |
