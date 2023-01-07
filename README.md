@@ -55,3 +55,30 @@ Columns:
 |Logistic regression|   99.91%   |       60.49%      |       99.98%       |
 |       KNN         |   99.83%   |       4.32%       |       99,99%       |
 |   Naive Bayes     |   99.29%   |       62.96%      |       99.35%       |
+
+### 2. Feature Selection
+
+### 2.1. RFECV
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   99.92%   |       75.93%      |       99.96%       |
+|   Random Forest   |   99.95%   |       77.16%      |       99.99%       |
+|       MLP         |   99.75%   |       77.16%      |       99.79%       |
+
+### 2.2. Forward Logistic Regression
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   99.91%   |       70.99%      |       99.96%       |
+|   Random Forest   |   99.96%   |       78.40%      |       99.99%       |
+|       MLP         |   99.93%   |       60.49%      |       99.99%       |
+
+
+### 2.3. PCA
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   99.91%   |       69.14%      |       99.96%       |
+|   Random Forest   |   99.95%   |       77.78%      |       99.99%       |
+|       MLP         |   99.88%   |       45.06%      |       99.98%       |
