@@ -58,7 +58,7 @@ Columns:
 
 ### 2. Feature Selection
 
-### 2.1. RFECV
+#### 2.1. RFECV
 
 |     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
 |-------------------|------------|-------------------|--------------------|
@@ -66,7 +66,7 @@ Columns:
 |   Random Forest   |   99.95%   |       77.16%      |       99.99%       |
 |       MLP         |   99.75%   |       77.16%      |       99.79%       |
 
-### 2.2. Forward Logistic Regression
+#### 2.2. Forward Logistic Regression
 
 |     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
 |-------------------|------------|-------------------|--------------------|
@@ -74,11 +74,52 @@ Columns:
 |   Random Forest   |   99.96%   |       78.40%      |       99.99%       |
 |       MLP         |   99.93%   |       60.49%      |       99.99%       |
 
-
-### 2.3. PCA
+#### 2.3. PCA
 
 |     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
 |-------------------|------------|-------------------|--------------------|
 |   Decision Tree   |   99.91%   |       69.14%      |       99.96%       |
 |   Random Forest   |   99.95%   |       77.78%      |       99.99%       |
 |       MLP         |   99.88%   |       45.06%      |       99.98%       |
+
+### 3. Class-imbalanced problem
+
+#### 3.1 Under Sampling
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   90.79%   |       89.51%      |       90.79%       |
+|   Random Forest   |   97.96%   |       89.51%      |       97.98%       |
+|       MLP         |    1.04%   |       99.99%      |        0.86%       |
+
+#### 3.2 Over Sampling
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   99.92%   |       75.31%      |       99.97%       |
+|   Random Forest   |   99.95%   |       78.40%      |       99.99%       |
+|       MLP         |   97.25%   |       90.74%      |       97.26%       |
+
+#### 3.3 Smote
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   99.77%   |       76.54%      |       99.81%       |
+|   Random Forest   |   99.95%   |       82.10%      |       99.98%       |
+|       MLP         |   99.75%   |       85.19%      |       99.78%       |
+
+#### 3.4 Cluster Centroids
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   26.09%   |       98.15%      |       25.97%       |
+|   Random Forest   |    6.25%   |       99.38%      |        6.09%       |
+|       MLP         |   99.70%   |       20.99%      |       99.84%       |
+
+#### 3.5 SMOTETomek
+
+|     Algorithm     |  accuracy  |  sensitivity(TPR) |  specificity(TNR)  |
+|-------------------|------------|-------------------|--------------------|
+|   Decision Tree   |   99.79%   |       75.31%      |       99.84%       |
+|   Random Forest   |   99.95%   |       82.72%      |       99.98%       |
+|       MLP         |   99.33%   |       86.42%      |       99.35%       |
